@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.santiago.labexercisefinals1.MainActivity2">
+
+
+    <Button
+        android:id="@+id/btn_lSharedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:onClick="dispSharedPref"
+        android:text="Load Shared Preferences"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_lInternalStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_lSharedPref"
+        android:onClick="dispIntStorage"
+        android:layout_below="@+id/btn_lSharedPref"
+        android:layout_marginTop="54dp"
+        android:text="Load Internal Storage"
+        android:layout_alignLeft="@+id/btn_lSharedPref"
+        android:layout_alignStart="@+id/btn_lSharedPref" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_lInternalStorage"
+        android:layout_alignStart="@+id/btn_lInternalStorage"
+        android:layout_below="@+id/btn_lInternalStorage"
+        android:layout_marginTop="47dp"
+        android:onClick="clear"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="back"
+        android:layout_alignBaseline="@+id/btn_clear"
+        android:layout_alignBottom="@+id/btn_clear"
+        android:layout_alignRight="@+id/btn_lInternalStorage"
+        android:layout_alignEnd="@+id/btn_lInternalStorage" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_clear"
+        android:layout_alignStart="@+id/btn_clear"
+        android:layout_below="@+id/btn_clear"
+        android:layout_marginTop="54dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_display"
+        android:layout_alignStart="@+id/tv_display"
+        android:layout_alignTop="@+id/tv_display"
+        android:text="" />
+
+</RelativeLayout>
